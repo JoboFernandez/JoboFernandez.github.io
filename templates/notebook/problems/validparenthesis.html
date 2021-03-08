@@ -57,15 +57,38 @@
 									<blockquote>Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 <br><br>An input string is valid if:
 <br>1. Open brackets must be closed by the same type of brackets.
-<br>	2. Open brackets must be closed in the correct order.</blockquote>
-									<p><a href="https://leetcode.com/problems/valid-parentheses/"><i>(problem source)</i></a></p>
-									<p>...</p>
+<br>2. Open brackets must be closed in the correct order.
+<br><br>source: <a href="https://leetcode.com/problems/valid-parentheses/"><i>leetcode</i></a></blockquote>
+									<p>This is an intermediate-level coding problem and is often asked in coding interviews. What makes this problem interesting is that unlike other coding problems, this one has practical applications such as mathematics or parsings.</p>
 
-									<h3 class="major">SOLUTION</h3>
-                                    <p>...</p>
+									<h3 class="major">Solution</h3>
+                                    <h4>code</h4>
+									<pre><code>def has_valid_parenthesis(statement: str):
+    p_map = {
+        ")": "(",
+        "]": "[",
+        "}": "{"
+    }
+    stack = []
 
-                                    <h3 class="major">Conclusion</h3>
-									<p>...</p>
+    for char in statement:
+        if char in p_map:
+            if len(stack) > 0 and p_map[char] == stack[-1]:
+                stack.pop()
+                continue
+            return False
+        else:
+            stack.append(char)
+
+    return True</code></pre>
+
+									<h4>Explanation</h4>
+									<p>Two main variables were initiated. The p_map variable simply maps the closing parenthesis to its corresponding opening. Albeit unnecessary, it makes for readability and convenience of the code thereon. The stack variable records every opening parenthesis to be matched/removed when it checks for a closing parenthesis.</p>
+									<p>The logic to this approach is fairly simple. We are to check for every character in a statement/expression. If the character is an opening parenthesis, we add it to the stack. Otherwise, we are to check if the closing parenthesis matches the last recorded opening parenthesis.</p>
+
+                                    <h3 class="major">Evaluation</h3>
+									<p>Time complexity: O(n)
+									<br>Space complexity: O(n)</p>
 
                                     <ul class="actions small">
                                         <li><a href="#" class="button primary small">BACK TO TOP</a></li>
