@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Notebook - Sim Joseph Fernandez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../../../index.html">Home</a></li>
+								<li><a href="../../projects.html">Projects</a></li>
+								<li><a href="../../notebook.html">Notebook</a></li>
+								<li><a href="../../about.html">About</a></li>
+								<li><a href="../../contact.html">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+                                <h2>Time Complexities of Selected Sorting Algorithms in Python</h2>
+                                <h3>/<a href="../../notebook.html">Notebook</a>/<a href="../experiments.html">Experiments</a></h3>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+                                    <h3 class="major">Introduction</h3>
+                                    <p>An <a href="https://en.wikipedia.org/wiki/Algorithm">algorithm</a> is a set of instructions used to solve a problem. It is important to note that a problem can be solved with different algorithms. This begs the question which algorithm to use then? And the answer to that is vaguely the efficiency of the algorithm. In computing, the efficiency is often evaluated by the processing time and memory usage of an algorithm.</p>
+
+                                    <p>In this article, we will be comparing the time complexities of different sorting algorithms in python. There are a number of sorting algorithms developed, some of which are simply variations or optimizations of existing ones. That being said, only a selected few and most commonly discussed of these algorithms will be discussed. This includes the slow O(n<sup>2</sup>) insertion sort and bubble sort; the fast O(n log(n)) merge sort and quick sort; and relatively faster O(n log(n)) tim sort. As a cherry-on-top, the python built-in sort is also included.</p>
+
+									<h3 class="major">INSCRIPTION</h3>
+                                    <section>
+                                        <h4>Sample Data Generation and Function Timer</h4>
+                                        <pre><code>from random import randint
+import time
+
+data = [randint(-1000, 1000) for _ in range(10000)]
+
+def function_timer(fxn, *args):
+    print(fxn.__name__)
+    start = time.time()
+    fxn(*args)
+    end = time.time()
+    print(f"processing time: {end - start} seconds\n")</code></pre>
+                                        <p>The efficiency of an algorithm is oftentimes slightly influenced by the data itself. Thus, there is a need to randomize our values to avoid bias hence our importation of random module. If you wish to clone the above code, feel free to mess around the data values.</p>
+                                        <p>Of course, since we're experimenting with time complexities, we'd be needing some sort of timer to time different algorithms. We utilized the time module in the creation of our <i>function_timer</i>. Basically what this <i>function_timer</i> does is as follows:
+                                        <ol>
+                                            <li>it takes our sorting algorithm function <i>fxn</i> and all of its arguments <i>*args</i>;</li>
+                                            <li>prints the function name <i>fxn.__name__</i>;</li>
+                                            <li>starts the timer;</li>
+                                            <li>executes the sorting algorithm;</li>
+                                            <li>ends the timer;</li>
+                                            <li>displays the processing time of the algorithm.</li>
+                                        </ol></p>
+
+                                        <h4>Insertion Sort and Bubble Sort</h4>
+                                        <pre><code>def insertion_sort(nums):
+    for i in range(1, len(nums)):
+        j = i
+        while nums[j] < nums[j-1] and j > 0:
+            nums[j], nums[j-1] = nums[j-1], nums[j]
+            j -= 1
+
+def bubble_sort(nums):
+    for i in range(len(nums)):
+        for j in range(len(nums) - 1 - i):
+            if nums[j] > nums[j+1]:
+                nums[j], nums[j+1] = nums[j+1], nums[j]</code></pre>
+                                        <p>Insertion and bubble sort are among the most direct approach in sorting data. This is what humans usually adapt when dealing with fairly small dataset such as arranging playing cards and whatnots. There's also the selection sort which is, just for the sake of this experiment, excluded. However, as was said, these algorithms are slow with theoretical time complexities of O(n<sup>2</sup>).</p>
+
+                                        <h4>Merge Sort, Quick Sort, and Tim Sort</h4>
+                                        <pre><code>def merge(nums, left, mid, right):
+    temp1 = nums[left:mid]
+    temp2 = nums[mid:right]
+
+    i = j = 0
+    k = left
+    while i < len(temp1) and j < len(temp2):
+        if temp1[i] < temp2[j]:
+            nums[k] = temp1[i]
+            i += 1
+        else:
+            nums[k] = temp2[j]
+            j += 1
+        k += 1
+
+    while i < len(temp1):
+        nums[k] = temp1[i]
+        i += 1
+        k += 1
+
+    while j < len(temp2):
+        nums[k] = temp2[j]
+        j += 1
+        k += 1
+
+def merge_sort(nums, left, right):
+    if right - left <= 1:
+        return
+    mid = (right + left) // 2
+    merge_sort(nums, left, mid)
+    merge_sort(nums, mid, right)
+    merge(nums, left, mid, right)
+
+def quick_sort(nums, left, right):
+    if left >= right:
+        return
+    pivot = right
+    i = left
+    for j in range(left, right):
+        if nums[j] < nums[pivot]:
+            nums[i], nums[j] = nums[j], nums[i]
+            i += 1
+    nums[pivot], nums[i] = nums[i], nums[pivot]
+    quick_sort(nums, left, i-1)
+    quick_sort(nums, i+1, right)
+
+def tim_sort(nums):
+    size = 64
+    if len(nums) <= size:
+        insertion_sort(nums)
+        return
+    part = nums[:size]
+    insertion_sort(part)
+    nums[:size] = part
+    tim_sort(nums[size:])
+    merge(nums, 0, size, len(nums))</code></pre>
+                                        <p>The sorting algorithms for merge sort, quick sort and tim sort are defined by the functions <i>merge_sort</i>, <i>quick_sort</i>, and <i>tim_sort</i>, respectively. The <i>merge</i> function is just a helper function used by merge sort and tim sort. These algorithms may be too sophisticated for humans alone over a small dataset, however these prove to be significantly faster in theory over large dataset with the use of computers.</p>
+
+                                        <h4>Python sort</h4>
+                                        <pre><code>def python_sort(nums):
+    nums.sort()</code></pre>
+                                        <p>In python, we can sort a dataset with sorted() function and .sort() method. The latter is used just for the sake of this experiment.</p>
+
+                                        <h4>Testings</h4>
+                                        <pre><code>sample = [_ for _ in data]
+function_timer(insertion_sort, sample)
+
+sample = [_ for _ in data]
+function_timer(bubble_sort, sample)
+
+sample = [_ for _ in data]
+function_timer(merge_sort, sample, 0, len(sample))
+
+sample = [_ for _ in data]
+function_timer(quick_sort, sample, 0, len(sample)-1)
+
+sample = [_ for _ in data]
+function_timer(tim_sort, sample)
+
+sample = [_ for _ in data]
+function_timer(python_sort, sample)</code></pre>
+                                        <p>To objectively compare the time efficiency of our sorting algorithms, there is a need to implement them on a constant variable which should be a constant <i>data</i>. Thus to avoid sorting an already sorted dataset, the sorting algorithm is applied on a temporary variable <i>sample</i> which repetitively copies our constant variable <i>data</i>.</p>
+
+                                        <h4>Result</h4>
+                                        <pre><code>insertion_sort
+processing time: 17.423025131225586 seconds
+
+bubble_sort
+processing time: 18.802334308624268 seconds
+
+merge_sort
+processing time: 0.08085751533508301 seconds
+
+quick_sort
+processing time: 0.05469846725463867 seconds
+
+tim_sort
+processing time: 0.38039231300354004 seconds
+
+python_sort
+processing time: 0.0 seconds
+</code></pre>
+                                    </section>
+
+                                    <h3 class="major">Conclusion</h3>
+                                    <p>The results we got were more or less as expected as in theory.</p>
+                                    <p>The insertion sort is a bit faster than bubble sort, but may be otherwise with a different dataset. Moreover, this difference in time is insignificant if we are to dramatically increase the size of our dataset.</p>
+                                    <p>The merge sort, quick sort and tim sort are significantly faster than insertion sort and bubble sort as predicted. If anything, the tim sort didn't behave as expected.</p>
+                                    <p>Tim sort is a combination of merge sort and insertion sort with the idea that merge sort operates on large dataset and breaks them to smaller dataset for which the insertion sort can efficiently operate. Yet, tim sort ran slower than merge sort and quick sort. Why is that? My scientific guesses to where to attribute this deviation from expectation are (1) the dataset may not be large enough for tim sort in the sense that the merge sort - insertion sort combination isn't fully utilized; (2) the tim sort <i>size</i> variable should be considered more intensely; or (3) the tim sort function itself needs recoding. </p>
+                                    <p>Lastly, we have the insanely fast python sort. Why is it fast then? Does it ran on better algorithm? I was informed that python sort was ran with tim sort algorithm, but I haven't had time to confirm it. But perhaps what made this significantly faster is the fact that python sort is coded in a low-level language.</p>
+                                    <p>If we are to learn from this experiment, it is that python built-in functions or methods are reliable and efficient. Instead of coding from scratch, try to explore and use for appropriate built-in functions.</p>
+                                    <p>P.S.: Should there be any corrections, feel free to message me. It shall be corrected and referenced accordingly.</p>
+                                    <ul class="actions small">
+                                        <li><a href="#" class="button primary small">BACK TO TOP</a></li>
+                                    </ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>

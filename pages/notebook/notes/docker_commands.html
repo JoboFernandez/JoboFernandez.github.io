@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Notebook - Sim Joseph Fernandez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../../../index.html">Home</a></li>
+								<li><a href="../../projects.html">Projects</a></li>
+								<li><a href="../../notebook.html">Notebook</a></li>
+								<li><a href="../../about.html">About</a></li>
+								<li><a href="../../contact.html">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+                                <h2>Docker: commands</h2>
+                                <h3>/<a href="../../notebook.html">Notebook</a>/<a href="../notes.html">Notes</a></h3>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+                                    <h3 class="major">Introduction</h3>
+                                    <p>An application has a set of dependencies and OS compatibility. Some projects often constitutes of different applications. Multiple applications presents problems to the project with OS and dependency contradictions among these applications. <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> solves this issue by separating the applications into different environments and deliver them as images/containers.</p>
+
+                                    <p>This blog only covers a summary of the commands. See <a href="https://docs.docker.com/">full documentation here</a>.</p>
+
+									<h3 class="major">Summary</h3>
+                                    <section>
+                                        <div class="table-wrapper">
+                                            <table class="alt">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Command</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- os core methods -->
+                                                    <tr>
+                                                        <td rowspan="1">docker version</td>
+                                                        <td>identify the docker version running on the host</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">docker run attach [container_id / container_name]</td>
+                                                        <td>attach back to a running container</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">docker run --name=[container_name] [image]</td>
+                                                        <td>assign a name when running a container</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run --link [app_var]:[container_name]</td>
+                                                        <td>links an application by mapping a variable of that app to a docker container</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run -i [prompt_application]</td>
+                                                        <td>runs prompt application in an interactive mode</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run -it [prompt_application]</td>
+                                                        <td>runs prompt application in an interactive mode on pseudo-terminal</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run -p 80:5000 [image]</td>
+                                                        <td>map port 80 of localhost to port 5000 of docker container</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run -v [dir1]:[dir2] [image]</td>
+                                                        <td>map docker host directory dir1 to docker container directory dir2 to preserve data</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run -e [var]=[value] [image]</td>
+                                                        <td>run an image defined by environment variable var=value</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run [image] --network=host</td>
+                                                        <td>run docker image on local host port</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run --cpu=[percentage] [image]</td>
+                                                        <td>makes sure that running an image will not take up a percentage, in decimal formt, threshold of the cpu</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker run --memory=[size]m [image]</td>
+                                                        <td>makes sure that running an image will not take up a size threshold of the memory</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker ps</td>
+                                                        <td>lists all running containers and some basic information about them</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker ps -a</td>
+                                                        <td>lists all containers be it running, stopped, or exited</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker stop [container_id / container_name]</td>
+                                                        <td>stop a running container</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker images</td>
+                                                        <td>lists available images and their sizes</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker rm [container_id / container_name]</td>
+                                                        <td>remove a stopped/exited container permanently</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker rmi</td>
+                                                        <td>removes an image (make sure to have stopped and removed containers from this image)</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker exec [container_id / container_name] [???] [???]</td>
+                                                        <td>execute a command on a docker container</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker inspect [container_id / container_name]</td>
+                                                        <td>returns all details of a container in a json format</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker push [tag_name]</td>
+                                                        <td>push your image into docker hub</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker pull [image]</td>
+                                                        <td>pulls an image but doesn't run a container unlike docker run command</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker logs [container_id / container_name]</td>
+                                                        <td>view the logs of container running in background or detached mode</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker build [docker_file] -t [tag_name]</td>
+                                                        <td>build an image from docker file locally on your system</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker-compose up</td>
+                                                        <td>bring up an entire application stack</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker network create --driver bridge subnet [subnet] custom-isolated-network</td>
+                                                        <td>create a bridge network</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker network ls</td>
+                                                        <td>list all docker networks</td>
+                                                    </tr><tr>
+                                                        <td rowspan="1">docker volume create [volume_name]</td>
+                                                        <td>creates a volumee</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+
+                                    <ul class="actions small">
+                                        <li><a href="#" class="button primary small">BACK TO TOP</a></li>
+                                    </ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>

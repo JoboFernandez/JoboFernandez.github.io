@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Notebook - Sim Joseph Fernandez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../../../index.html">Home</a></li>
+								<li><a href="../../projects.html">Projects</a></li>
+								<li><a href="../../notebook.html">Notebook</a></li>
+								<li><a href="../../about.html">About</a></li>
+								<li><a href="../../contact.html">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+                                <h2>Python Module: os</h2>
+                                <h3>/<a href="../../notebook.html">Notebook</a>/<a href="../notes.html">Notes</a></h3>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+                                    <h3 class="major">Introduction</h3>
+									<p>Python module os handles the operating system. This involves environment variables, files and folders.</p>
+
+                                    <p>This blog only covers a summary of the module methods. See <a href="https://docs.python.org/3/library/os.html">full documentation here</a>.</p>
+
+									<h3 class="major">Summary</h3>
+                                    <section>
+                                        <pre><code>import os</code></pre>
+                                        <div class="table-wrapper">
+                                            <table class="alt">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Method</th>
+                                                        <th>Args / Kwargs</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- os core methods -->
+                                                    <tr>
+                                                        <td rowspan="1">os.getcwd()</td>
+                                                        <td><i></i></td>
+                                                        <td></td>
+                                                        <td>returns the current working directory in string</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.chdir()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>changes os directory to <i>path_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.listdir()</td>
+                                                        <td><i></i></td>
+                                                        <td></td>
+                                                        <td>returns a list of files and folders</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.mkdir()</td>
+                                                        <td><i>folder_name</i></td>
+                                                        <td>string</td>
+                                                        <td>creates a folder named <i>folder_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.mkdirs()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>creates directory and sub-directories defined by <i>path_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.rmdir()</td>
+                                                        <td><i>folder_name</i></td>
+                                                        <td>string</td>
+                                                        <td>removes a folder named <i>folder_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.removedirs()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>removes directory and sub-directories defined by <i>path_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.rename()</td>
+                                                        <td><i>name</i>, <i>new_name</i></td>
+                                                        <td>string, string</td>
+                                                        <td>renames a file/folder named <i>name</i> into <i>new_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.stat()</td>
+                                                        <td><i>filename</i></td>
+                                                        <td>string</td>
+                                                        <td>displays the stats/attributes of <i>filename</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.walk()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>returns a generator object containing a tuple of (directory in string, sub-directories of directory in list, and filenames of directory in list) for all directories and sub-directories in by <i>path_name</i></td>
+                                                    </tr>
+                                                    <!-- os.environ methods -->
+                                                    <tr>
+                                                        <td rowspan="1">os.environ.get()</td>
+                                                        <td><i>environment_variable</i></td>
+                                                        <td>string</td>
+                                                        <td>returns the value of <i>environment_variable</i>. e.g. <i>'HOME'</i> returns the home directory of the os</td>
+                                                    </tr>
+                                                    <!-- os.path methods -->
+                                                    <tr>
+                                                        <td rowspan="1">os.path.expanduser()</td>
+                                                        <td><i>???</i></td>
+                                                        <td>???</td>
+                                                        <td>???</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.join()</td>
+                                                        <td><i>base_dir</i>, <i>fname</i></td>
+                                                        <td>string, string</td>
+                                                        <td>concatenates base directory <i>base_dir</i> to a file/folder <i>fname</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.basename()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>returns the base file/folder name of the directory <i>path_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.dirname()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>returns the parent directory of the file/folder defined by <i>path_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.split()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>returns a tuple of directory name and file/folder name specified by <i>path_name</i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.exists()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>returns a boolean representing the existence of <i>path_name</i> in the os</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.isdir()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>checks if the directory <i>path_name</i> is a folder/directory and returns a boolean</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.isfile()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>checks if the directory <i>path_name</i> is a file and returns a boolean</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="1">os.path.splitext()</td>
+                                                        <td><i>path_name</i></td>
+                                                        <td>string</td>
+                                                        <td>returns a tuple of root name and extension name of a given directory</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+
+                                    <ul class="actions small">
+                                        <li><a href="#" class="button primary small">BACK TO TOP</a></li>
+                                    </ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>

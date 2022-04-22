@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Notebook - Sim Joseph Fernandez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../../../index.html">Home</a></li>
+								<li><a href="../../projects.html">Projects</a></li>
+								<li><a href="../../notebook.html">Notebook</a></li>
+								<li><a href="../../about.html">About</a></li>
+								<li><a href="../../contact.html">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+                                <h2>Vowel or Consonant</h2>
+                                <h3>/<a href="../../notebook.html">Notebook</a>/<a href="../techniques.html">Coding Techniques</a></h3>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+                                    <h3 class="major">Introduction</h3>
+									<p>Determining whether a letter is either a vowel or a consonant is perhaps among the most common elementary problem in programming. This doesn't seem to have apparent application, but who knows when you'll need it?</p>
+                                    <p>This is intended for beginner python programmers who have not yet mastered the "pythonic ways" as they say. Although intermediate and advanced programmers are also welcome.</p>
+
+									<h3 class="major">INSCRIPTION</h3>
+                                    <section>
+                                        <h4>Conventional Solution</h4>
+                                        <p>The conventional approach to this type of problem is to individually check if a letter equals to any of the vowels or consonants. To simplify the code, a series of logic 'or' is used. To show and easily understand this approach, a python code is shown below.</p>
+                                        <pre><code>is_vowel(letter):
+    if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
+        return True</code></pre>
+                                        <p>I wouldn't explain any further. Instead, I'd like you to imagine what the code would look like if it were for consonants. Moreover, what the code would look like if we were to consider uppercase letters.</p>
+                                    </section>
+                                    <section>
+                                        <h4>Pythonic Solution</h4>
+                                        <p>Here's how it would look like in a "pythonic" solution.</p>
+
+                                        <pre><code>is_vowel(letter):
+    if letter.lower() in 'aeiou':
+        return True
+
+is_consonant(letter):
+    if letter.lower() in 'bcdfghjklmnpqrstvwxyz':
+        return True</code></pre>
+                                        <ul>
+                                            <li>The <b>if x in y</b> statement questions the existence of <i>x</i> among the elements of <i>y</i></y></li>
+                                            <li>lower() is a string method that converts every character of a string to its corresponding lowercase</li>
+                                        </ul>
+                                        <p></p>
+                                    </section>
+
+                                    <h3 class="major">Conclusion</h3>
+                                    <p>This particular vowel/consonant problem doesn't seem to have apparent application as it seems too basic. However, this technique can very well be applied to other types of problems.</p>
+
+                                    <ul class="actions small">
+                                        <li><a href="#" class="button primary small">BACK TO TOP</a></li>
+                                    </ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>
