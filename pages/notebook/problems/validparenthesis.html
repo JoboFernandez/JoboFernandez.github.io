@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Notebook - Sim Joseph Fernandez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../../../index.html">Home</a></li>
+								<li><a href="../../projects.html">Projects</a></li>
+								<li><a href="../../notebook.html">Notebook</a></li>
+								<li><a href="../../about.html">About</a></li>
+								<li><a href="../../contact.html">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+                                <h2>Valid Parenthesis</h2>
+                                <h3>/<a href="../../notebook.html">Notebook</a>/<a href="../problems.html">Problem Solving</a></h3>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+                                    <h3 class="major">Introduction</h3>
+									<h4>Problem</h4>
+									<blockquote>Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+<br><br>An input string is valid if:
+<br>1. Open brackets must be closed by the same type of brackets.
+<br>2. Open brackets must be closed in the correct order.
+<br><br>source: <a href="https://leetcode.com/problems/valid-parentheses/"><i>leetcode</i></a></blockquote>
+									<p>This is an intermediate-level coding problem and is often asked in coding interviews. What makes this problem interesting is that unlike other coding problems, this one has practical applications such as mathematics or parsings.</p>
+
+									<h3 class="major">Solution</h3>
+                                    <h4>code</h4>
+									<pre><code>def has_valid_parenthesis(statement: str):
+    p_map = {
+        ")": "(",
+        "]": "[",
+        "}": "{"
+    }
+    stack = []
+
+    for char in statement:
+        if char in p_map:
+            if len(stack) > 0 and p_map[char] == stack[-1]:
+                stack.pop()
+                continue
+            return False
+        else:
+            stack.append(char)
+
+    return True</code></pre>
+
+									<h4>Explanation</h4>
+									<p>Two main variables were initiated. The p_map variable simply maps the closing parenthesis to its corresponding opening. Albeit unnecessary, it makes for readability and convenience of the code thereon. The stack variable records every opening parenthesis to be matched/removed when it checks for a closing parenthesis.</p>
+									<p>The logic to this approach is fairly simple. We are to check for every character in a statement/expression. If the character is an opening parenthesis, we add it to the stack. Otherwise, we are to check if the closing parenthesis matches the last recorded opening parenthesis.</p>
+
+                                    <h3 class="major">Evaluation</h3>
+									<p>Time complexity: O(n)
+									<br>Space complexity: O(n)</p>
+
+                                    <ul class="actions small">
+                                        <li><a href="#" class="button primary small">BACK TO TOP</a></li>
+                                    </ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>
