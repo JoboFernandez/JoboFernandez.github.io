@@ -59,6 +59,12 @@
 									<section class="features">
 
                                                                         <article>
+										<a class="image"><img src="../../images/league-of-legends-bot.png" id="league-of-legends-bot" alt="" /></a>
+										<h3 class="major">LEAGUE OF LEGENDS BOT</h3>
+										<p>PyAutoGUI | PyTesseract | Pillow<br><br>A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+                                    <article>
 										<a class="image"><img src="../../images/path-finding-visualizer.png" id="path-finding-visualizer" alt="" /></a>
 										<h3 class="major">PATH FINDING VISUALIZER</h3>
 										<p>PyGame<br><br>A 2D path-finding visualizer implemented in several algorithms;</p>
@@ -69,12 +75,6 @@
 										<h3 class="major">TIC-TAC-TOE ARTIFICIAL INTELLIGENCE</h3>
 										<p>PyGame<br><br>Classic Tic-Tac-Toe game featuring an AI on Minimax algorithm;</p>
 										<a href="https://github.com/JoboFernandez/Tic-Tac-Toe/blob/master/main.py" class="special">View Source Code</a>
-									</article>
-                                    <article>
-										<a class="image"><img src="../../images/league-of-legends-bot.png" id="league-of-legends-bot" alt="" /></a>
-										<h3 class="major">LEAGUE OF LEGENDS BOT</h3>
-										<p>PyAutoGUI | PyTesseract | Pillow<br><br>A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;</p>
-										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
                                     <article>
 										<a class="image"><img src="../../images/killer-sudoku-arc-consistency-backtracking.png" id="killer-sudoku-arc-consistency-backtracking" alt="" /></a>
@@ -97,12 +97,12 @@
                                     <article>
 										<a class="image"><img src="../../images/none.png" id="none" alt="" /></a>
 										<h3 class="major">CUBE GRAIN & CLUSTER</h3>
-										<p>None/Minor Libraries Involved<br><br>A program that lists the cluster-cubes belonging to a certain grain ID; This 3-Dimensional data is stored in a nested list with the search implemented in a nested loop;</p>
+										<p>None/Minor Libraries Involved<br><br>A program that lists the cluster-cubes belonging to a certain grain ID; This 3-Dimensional data is stored in a nested list; The cluster search is implemented in a nested loop with a designed mathematical formula;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
 									</article>
                                     <article>
 										<a class="image"><img src="../../images/none.png" id="none" alt="" /></a>
-										<h3 class="major">HTML GENERATOR</h3>
+										<h3 class="major">HTML LIST GENERATOR</h3>
 										<p>HTML<br><br>A program that generates a nested HTML list elements from a given list structure using DFS algorithm;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
 									</article>
@@ -147,6 +147,16 @@
             <script>
             	
 				$(function() {
+						$("#league-of-legends-bot").hover(
+							function() {
+								$(this).attr("src", "../../images/league-of-legends-bot.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/league-of-legends-bot.png");
+							}
+						);
+					});
+				$(function() {
 						$("#path-finding-visualizer").hover(
 							function() {
 								$(this).attr("src", "../../images/path-finding-visualizer.gif");
@@ -163,16 +173,6 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/tic-tac-toe-ai-minimax.png");
-							}
-						);
-					});
-				$(function() {
-						$("#league-of-legends-bot").hover(
-							function() {
-								$(this).attr("src", "../../images/league-of-legends-bot.gif");
-							},
-							function() {
-								$(this).attr("src", "../../images/league-of-legends-bot.png");
 							}
 						);
 					});

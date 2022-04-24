@@ -59,16 +59,34 @@
 									<section class="features">
 
                                                                         <article>
+										<a class="image"><img src="../../images/league-of-legends-bot.png" id="league-of-legends-bot" alt="" /></a>
+										<h3 class="major">LEAGUE OF LEGENDS BOT</h3>
+										<p>PyAutoGUI | PyTesseract | Pillow<br><br>A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+                                    <article>
 										<a class="image"><img src="../../images/path-finding-visualizer.png" id="path-finding-visualizer" alt="" /></a>
 										<h3 class="major">PATH FINDING VISUALIZER</h3>
 										<p>PyGame<br><br>A 2D path-finding visualizer implemented in several algorithms;</p>
 										<a href="https://github.com/JoboFernandez/PathFindingVisualizer/blob/master/main.py" class="special">View Source Code</a>
 									</article>
                                     <article>
-										<a class="image"><img src="../../images/league-of-legends-bot.png" id="league-of-legends-bot" alt="" /></a>
-										<h3 class="major">LEAGUE OF LEGENDS BOT</h3>
-										<p>PyAutoGUI | PyTesseract | Pillow<br><br>A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;</p>
-										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+										<a class="image"><img src="../../images/pseudo-youtube-downloader.png" id="pseudo-youtube-downloader" alt="" /></a>
+										<h3 class="major">PSEUDO YOUTUBE DOWNLOADER</h3>
+										<p>PyQt5 | Selenium<br><br>A downloader that employs web-crawling activities to download a youtube video;</p>
+										<a href="https://github.com/JoboFernandez/YoutubeDownloader/blob/master/ytd.py" class="special">View Source Code</a>
+									</article>
+                                    <article>
+										<a class="image"><img src="../../images/computer-surveillance.png" id="computer-surveillance" alt="" /></a>
+										<h3 class="major">COMPUTER SURVEILLANCE</h3>
+										<p>Socket | Pillow<br><br>A program that monitors over other devices from screenshots taken at certain time interval;</p>
+										<a href="https://github.com/JoboFernandez/ComSpy/blob/master/src/client.py" class="special">View Source Code</a>
+									</article>
+                                    <article>
+										<a class="image"><img src="../../images/none.png" id="none" alt="" /></a>
+										<h3 class="major">PDF SCROLLER</h3>
+										<p>PyAutoGUI | Speech_Recognition<br><br>A program that scrolls a pdf upon 'up' and 'down' voice command;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
 									</article>
 
 
@@ -105,6 +123,16 @@
             <script>
             	
 				$(function() {
+						$("#league-of-legends-bot").hover(
+							function() {
+								$(this).attr("src", "../../images/league-of-legends-bot.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/league-of-legends-bot.png");
+							}
+						);
+					});
+				$(function() {
 						$("#path-finding-visualizer").hover(
 							function() {
 								$(this).attr("src", "../../images/path-finding-visualizer.gif");
@@ -115,12 +143,22 @@
 						);
 					});
 				$(function() {
-						$("#league-of-legends-bot").hover(
+						$("#pseudo-youtube-downloader").hover(
 							function() {
-								$(this).attr("src", "../../images/league-of-legends-bot.gif");
+								$(this).attr("src", "../../images/pseudo-youtube-downloader.gif");
 							},
 							function() {
-								$(this).attr("src", "../../images/league-of-legends-bot.png");
+								$(this).attr("src", "../../images/pseudo-youtube-downloader.png");
+							}
+						);
+					});
+				$(function() {
+						$("#computer-surveillance").hover(
+							function() {
+								$(this).attr("src", "../../images/computer-surveillance.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/computer-surveillance.png");
 							}
 						);
 					});
