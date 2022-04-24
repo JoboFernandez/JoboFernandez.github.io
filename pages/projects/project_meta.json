@@ -1,8 +1,21 @@
 [
+
+
+  {
+    "title": "LEAGUE OF LEGENDS BOT",
+    "categories": ["Scripting & Automation", "Game Development", "Desktop Application", "Data Structures & Algorithm"],
+    "importance": 2,
+    "technologies": ["PyAutoGUI", "PyTesseract", "Pillow"],
+    "description": "A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;",
+    "privacy": "private",
+    "github": "",
+    "filename": "league-of-legends-bot",
+    "gif": true
+  },
   {
     "title": "PATH FINDING VISUALIZER",
     "categories": ["Data Structures & Algorithm", "Desktop Application"],
-    "importance": 1,
+    "importance": 2,
     "technologies": ["PyGame"],
     "description": "A 2D path-finding visualizer implemented in several algorithms;",
     "privacy": "public",
@@ -11,20 +24,9 @@
     "gif": true
   },
   {
-    "title": "TIC-TAC-TOE ARTIFICIAL INTELLIGENCE",
-    "categories": ["Data Structures & Algorithm", "Game Development"],
-    "importance": 1,
-    "technologies": ["PyGame"],
-    "description": "Classic Tic-Tac-Toe game featuring an AI on Minimax algorithm;",
-    "privacy": "public",
-    "github": "https://github.com/JoboFernandez/Tic-Tac-Toe/blob/master/main.py",
-    "filename": "tic-tac-toe-ai-minimax",
-    "gif": true
-  },
-  {
     "title": "SPACE INVADERS",
     "categories": ["Game Development"],
-    "importance": 1,
+    "importance": 2,
     "technologies": ["PyGame"],
     "description": "Classic arcade game Space Invaders redesigned with airship and weapon selection phase on a survival game mode;",
     "privacy": "public",
@@ -33,9 +35,20 @@
     "gif": true
   },
   {
+    "title": "TIC-TAC-TOE ARTIFICIAL INTELLIGENCE",
+    "categories": ["Data Structures & Algorithm", "Game Development"],
+    "importance": 2,
+    "technologies": ["PyGame"],
+    "description": "Classic Tic-Tac-Toe game featuring an AI on Minimax algorithm;",
+    "privacy": "public",
+    "github": "https://github.com/JoboFernandez/Tic-Tac-Toe/blob/master/main.py",
+    "filename": "tic-tac-toe-ai-minimax",
+    "gif": true
+  },
+  {
     "title": "MEMORY GAME",
     "categories": ["Game Development"],
-    "importance": 1,
+    "importance": 2,
     "technologies": ["Tkinter"],
     "description": "A card-matching memory game implemented in Tkinter GUI;",
     "privacy": "client",
@@ -44,9 +57,34 @@
     "gif": true
   },
   {
-    "title": "PSEUDO YOUTUBE DOWNLOADER",
+    "title": "POLYGON MAKER",
     "categories": ["Scripting & Automation"],
-    "importance": 0,
+    "importance": 2,
+    "technologies": ["Turtle"],
+    "description": "Generates a line of polygons using Turtle library",
+    "privacy": "client",
+    "github": "",
+    "filename": "polygon-maker",
+    "gif": true
+  },
+  {
+    "title": "TRAVEL WEBSITE",
+    "categories": ["Web Development"],
+    "importance": 2,
+    "technologies": ["HTML", "CSS"],
+    "description": "A website for travel destinations in a particular city in Europe; Coded purely with HTML and CSS only as required;",
+    "privacy": "client",
+    "github": "",
+    "filename": "travel-website",
+    "gif": true
+  },
+
+
+
+  {
+    "title": "PSEUDO YOUTUBE DOWNLOADER",
+    "categories": ["Desktop Application", "Scripting & Automation"],
+    "importance": 1,
     "technologies": ["PyQt5", "Selenium"],
     "description": "A downloader that employs web-crawling activities to download a youtube video;",
     "privacy": "public",
@@ -56,24 +94,137 @@
   },
   {
     "title": "COMPUTER SURVEILLANCE",
-    "categories": ["Scripting & Automation"],
-    "importance": 0,
+    "categories": ["Desktop Application"],
+    "importance": 1,
     "technologies": ["Socket", "Pillow"],
     "description": "A program that monitors over other devices from screenshots taken at certain time interval;",
     "privacy": "public",
     "github": "https://github.com/JoboFernandez/ComSpy/blob/master/src/client.py",
     "filename": "computer-surveillance",
     "gif": true
+  },{
+    "title": "SCRAPER: ADACOUNTYITGIS",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["Selenium", "Pandas", "PyInstaller"],
+    "description": "An executable program that extracts the precinct numbers given the addresses;",
+    "privacy": "client",
+    "github": "",
+    "filename": "adacountyitgis-scraper",
+    "gif": true
   },
   {
-    "title": "LEAGUE OF LEGENDS BOT",
-    "categories": ["Scripting & Automation", "Game Development", "Desktop Application", "Data Structures & Algorithm"],
-    "importance": 1,
-    "technologies": ["PyAutoGUI", "PyTesseract", "Pillow"],
-    "description": "A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;",
+    "title": "SCRAPER: AHADITH",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["BeautifulSoup", "Requests", "Regex"],
+    "description": "Extracts book content from the website to a formatted text file;",
+    "privacy": "client",
+    "github": "",
+    "filename": "ahadith-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: BOLOGNACHILDRENSBOOKFAIR",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["Selenium", "BeautifulSoup", "Requests", "Pandas"],
+    "description": "Extracts publishers, addresses, contacts, and age categories;",
+    "privacy": "client",
+    "github": "",
+    "filename": "bolognachildrensbookfair-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: CONTACTCARS",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["Selenium", "Pandas"],
+    "description": "Extracts car names, models, and costs;",
+    "privacy": "client",
+    "github": "",
+    "filename": "contactcars-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: DORIDDLES",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["Selenium", "BeautifulSoup", "Requests", "Pandas"],
+    "description": "Extracts riddles and answers;",
+    "privacy": "client",
+    "github": "",
+    "filename": "doriddles-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: MERRIAM-WEBSTER",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["BeautifulSoup", "Requests", "Pandas"],
+    "description": "Extracts words, parts of speech, and URL;",
     "privacy": "private",
     "github": "",
-    "filename": "league-of-legends-bot",
+    "filename": "merriam-webster-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: SEBI",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["Selenium", "Pandas"],
+    "description": "Extracts dates and company names;",
+    "privacy": "client",
+    "github": "",
+    "filename": "sebi-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: TALABAT",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["Selenium", "Pandas", "PyInstaller"],
+    "description": "An executable program that extracts data into two (2) csv files; First file contains restaurant name, address, food type, and logo; Second file contains the food name, description, category, image, and price;",
+    "privacy": "client",
+    "github": "",
+    "filename": "talabat-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: TERRASHOP",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["BeautifulSoup", "Requests", "Pandas"],
+    "description": "Extracts product numbers and prices;",
+    "privacy": "client",
+    "github": "",
+    "filename": "terrashop-scraper",
+    "gif": true
+  },
+  {
+    "title": "SCRAPER: YELLOWPAGES",
+    "categories": ["Scripting & Automation"],
+    "importance": 0,
+    "technologies": ["BeautifulSoup", "Requests", "Pandas"],
+    "description": "Extracts business names, contact details, and address;",
+    "privacy": "client",
+    "github": "",
+    "filename": "yellowpages-scraper",
+    "gif": true
+  },
+
+
+
+
+  {
+    "title": "GEKITAI",
+    "categories": ["Game Development"],
+    "importance": -1,
+    "technologies": [],
+    "description": "Implementation of the Japanese Gekitai board game;",
+    "privacy": "client",
+    "github": "",
+    "filename": "gekitai",
     "gif": true
   },
   {
@@ -109,10 +260,41 @@
     "filename": "n-queens-solver",
     "gif": true
   },
+
+
+
   {
-    "title": "PDF SCROLLER",
+    "title": "TASK TRACKER",
     "categories": ["Scripting & Automation"],
     "importance": -1,
+    "technologies": ["Matplotlib", "DateTime"],
+    "description": "A program that defines a function returning a pseudo-hyperbolic progress;",
+    "privacy": "client",
+    "github": "",
+    "filename": "task-tracker",
+    "gif": false
+  },
+
+
+
+  {
+    "title": "PARKING SYSTEM",
+    "categories": ["Scripting & Automation"],
+    "importance": -1,
+    "technologies": [],
+    "description": "A parking system project for recording entry and exit of vehicles from a parking lot model; Also features exportation and importation of aforementioned records;",
+    "privacy": "client",
+    "github": "",
+    "filename": "parking-system",
+    "gif": false
+  },
+
+
+
+  {
+    "title": "PDF SCROLLER",
+    "categories": ["Desktop Application", "Scripting & Automation"],
+    "importance": -2,
     "technologies": ["PyAutoGUI", "Speech_Recognition"],
     "description": "A program that scrolls a pdf upon 'up' and 'down' voice command;",
     "privacy": "client",
@@ -123,7 +305,7 @@
   {
     "title": "SYSTEM ACCOUNTS MANAGER",
     "categories": ["Scripting & Automation"],
-    "importance": -1,
+    "importance": -2,
     "technologies": ["Subprocess"],
     "description": "A program for creating, updating, and deleting user accounts in Windows OS; ",
     "privacy": "client",
@@ -132,64 +314,31 @@
     "gif": false
   },
   {
-    "title": "POLYGON MAKER",
-    "categories": ["Scripting & Automation"],
-    "importance": 1,
-    "technologies": ["Turtle"],
-    "description": "Generates a line of polygons using Turtle library",
-    "privacy": "client",
-    "github": "",
-    "filename": "polygon-maker",
-    "gif": true
-  },
-  {
-    "title": "PARKING SYSTEM",
-    "categories": ["Scripting & Automation"],
-    "importance": 0,
-    "technologies": [],
-    "description": "A parking system project for recording entry and exit of vehicles from a parking lot model; Also features exportation and importation of aforementioned records;",
-    "privacy": "client",
-    "github": "",
-    "filename": "parking-system",
-    "gif": false
-  },
-  {
-    "title": "GEKITAI",
-    "categories": ["Game Development"],
-    "importance": 0,
-    "technologies": [],
-    "description": "Implementation of the Japanese Gekitai board game;",
-    "privacy": "client",
-    "github": "",
-    "filename": "gekitai",
-    "gif": true
-  },
-  {
     "title": "CUBE GRAIN & CLUSTER",
     "categories": ["Data Structures & Algorithm"],
-    "importance": -1,
+    "importance": -2,
     "technologies": [],
-    "description": "A program that lists the cluster-cubes belonging to a certain grain ID; This 3-Dimensional data is stored in a nested list with the search implemented in a nested loop;",
+    "description": "A program that lists the cluster-cubes belonging to a certain grain ID; This 3-Dimensional data is stored in a nested list; The cluster search is implemented in a nested loop with a designed mathematical formula;",
     "privacy": "client",
     "github": "",
     "filename": "none",
     "gif": false
   },
   {
-    "title": "DEVICE CHECKER",
-    "categories": ["Scripting & Automation"],
-    "importance": -1,
-    "technologies": ["Regex"],
-    "description": "A program that checks for active HA devices; Also identifies component failures;",
-    "privacy": "client",
+    "title": "DJANGO STATIC FILES REPLACER",
+    "categories": ["Scripting & Automation", "Web Development"],
+    "importance": -2,
+    "technologies": ["HTML", "OS"],
+    "description": "A program that generates a revised HTML file by applying the {% static %} format on an HTML template;",
+    "privacy": "private",
     "github": "",
     "filename": "none",
     "gif": false
   },
   {
-    "title": "HTML GENERATOR",
+    "title": "HTML LIST GENERATOR",
     "categories": ["Scripting & Automation", "Web Development", "Data Structures & Algorithm"],
-    "importance": -1,
+    "importance": -2,
     "technologies": ["HTML"],
     "description": "A program that generates a nested HTML list elements from a given list structure using DFS algorithm;",
     "privacy": "client",
@@ -198,9 +347,20 @@
     "gif": false
   },
   {
+    "title": "DEVICE CHECKER",
+    "categories": ["Scripting & Automation"],
+    "importance": -2,
+    "technologies": ["Regex"],
+    "description": "A program that checks for active HA devices; Also identifies component failures;",
+    "privacy": "client",
+    "github": "",
+    "filename": "none",
+    "gif": false
+  },
+  {
     "title": "STORY GENERATOR",
     "categories": ["Scripting & Automation"],
-    "importance": -1,
+    "importance": -2,
     "technologies": [],
     "description": "A program that generates a story from a given template in text file format;",
     "privacy": "client",
@@ -209,20 +369,9 @@
     "gif": false
   },
   {
-    "title": "TASK TRACKER",
-    "categories": ["Scripting & Automation"],
-    "importance": 0,
-    "technologies": ["Matplotlib", "DateTime"],
-    "description": "A program that defines a function returning a pseudo-hyperbolic progress;",
-    "privacy": "client",
-    "github": "",
-    "filename": "task-tracker",
-    "gif": false
-  },
-  {
     "title": "THUMBNAIL GENERATOR",
     "categories": ["Scripting & Automation"],
-    "importance": -1,
+    "importance": -2,
     "technologies": ["Pillow"],
     "description": "A program that generates images for youtube thumbnails;",
     "privacy": "private",
@@ -231,58 +380,14 @@
     "gif": false
   },
   {
-    "title": "TRAVEL WEBSITE",
-    "categories": ["Web Development"],
-    "importance": 0,
-    "technologies": ["HTML", "CSS"],
-    "description": "A website for travel destinations in a particular city in Europe; Coded purely with HTML and CSS only as required;",
-    "privacy": "client",
-    "github": "",
-    "filename": "travel-website",
-    "gif": true
-  },
-  {
     "title": "CRYPTOCURRENCY WEIGHT BALANCER",
     "categories": ["Data Structures & Algorithm", "Scripting & Automation"],
-    "importance": -1,
+    "importance": -2,
     "technologies": [],
     "description": "A program that recursively balances the weights of a set of cryptocurrencies while not exceeding the weight-capping;",
     "privacy": "client",
     "github": "",
     "filename": "none",
     "gif": false
-  },
-  {
-    "title": "SCRAPER: ADACOUNTYITGIS",
-    "categories": ["Scripting & Automation"],
-    "importance": 1,
-    "technologies": ["Selenium", "Pandas", "PyInstaller"],
-    "description": "An executable file that scrapes the precinct numbers given the addresses;",
-    "privacy": "client",
-    "github": "",
-    "filename": "adacountyitgis-scraper",
-    "gif": true
-  },
-  {
-    "title": "SCRAPER: AHADITH",
-    "categories": ["Scripting & Automation"],
-    "importance": 1,
-    "technologies": ["BeautifulSoup", "Requests", "Regex"],
-    "description": "Extracts book content from the website to a formatted text file;",
-    "privacy": "client",
-    "github": "",
-    "filename": "ahadith-scraper",
-    "gif": true
-  },
-  {
-    "title": "SCRAPER: TERRASHOP",
-    "categories": ["Scripting & Automation"],
-    "importance": 1,
-    "technologies": ["BeautifulSoup", "Requests", "Pandas"],
-    "description": "Extracts product numbers and prices;",
-    "privacy": "client",
-    "github": "",
-    "filename": "terrashop-scraper",
-    "gif": true
   }
 ]
