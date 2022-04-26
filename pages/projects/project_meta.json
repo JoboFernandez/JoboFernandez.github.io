@@ -2,6 +2,17 @@
 
 
   {
+    "title": "PYQT5 LOGIN TEMPLATE",
+    "categories": ["Desktop Application"],
+    "importance": 2,
+    "technologies": ["PyQt5", "Psycopg2", "Regex", "Sys", "Os", "Pathlib"],
+    "description": "A login template for any desktop GUI applications;",
+    "privacy": "private",
+    "github": "",
+    "filename": "pyqt5-login-template",
+    "gif": true
+  },
+  {
     "title": "LEAGUE OF LEGENDS BOT",
     "categories": ["Scripting & Automation", "Game Development", "Desktop Application", "Data Structures & Algorithm"],
     "importance": 2,
@@ -17,7 +28,7 @@
     "categories": ["Data Structures & Algorithm", "Desktop Application"],
     "importance": 2,
     "technologies": ["PyGame"],
-    "description": "A 2D path-finding visualizer implemented in several algorithms;",
+    "description": "A 2D path-finding visualizer implemented in several algorithms (A*, Bellman-Ford, Breadth-First Search, Depth-First Search, Dijkstra's, Greedy Best First Search, Iterative Deepening Search, Uniform Cost Search);",
     "privacy": "public",
     "github": "https://github.com/JoboFernandez/PathFindingVisualizer/blob/master/main.py",
     "filename": "path-finding-visualizer",
