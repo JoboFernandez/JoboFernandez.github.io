@@ -341,8 +341,8 @@
     "importance": -2,
     "technologies": ["HTML", "OS"],
     "description": "A program that generates a revised HTML file by applying the {% static %} format on an HTML template;",
-    "privacy": "private",
-    "github": "",
+    "privacy": "public",
+    "github": "https://github.com/JoboFernandez/Django-Static-Files-Replacer",
     "filename": "none",
     "gif": false
   },
