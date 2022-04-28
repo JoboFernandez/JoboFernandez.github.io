@@ -62,6 +62,7 @@ for category, details in categories.items():
         privacy = project["privacy"]
         github = project["github"]
         has_gif = project["gif"]
+        print(f"[i] Scanned {category} >> {title}")
 
         if privacy == "public":
             reference = f"""<a href="{github}" class="special">View Source Code</a>"""
