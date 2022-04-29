@@ -90,6 +90,17 @@
     "gif": true
   },
   {
+    "title": "KWIZMO",
+    "categories": ["Web Development"],
+    "importance": 2,
+    "technologies": ["Django", "HTML", "Bootstrap", "PostgreSQL", "Widget_Tweaks", "Django_Seed", "Multiselectfield"],
+    "description": "A quiz portal implementation with Django (backend) and Bootstrap (frontend); Includes four apps (accounts, questions, awards, notifications); Class-based views were utilized on some app views; Signals were also used;",
+    "privacy": "private",
+    "github": "",
+    "filename": "kwizmo",
+    "gif": true
+  },
+  {
     "title": "TRAVEL WEBSITE",
     "categories": ["Web Development"],
     "importance": 2,
