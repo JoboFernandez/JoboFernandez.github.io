@@ -58,7 +58,7 @@
   },
   {
     "title": "MEMORY GAME",
-    "categories": ["Game Development"],
+    "categories": ["Desktop Application", "Game Development"],
     "importance": 2,
     "technologies": ["Tkinter"],
     "description": "A card-matching memory game implemented in Tkinter GUI;",
@@ -296,6 +296,17 @@
 
 
 
+  {
+    "title": "UPWORK COVER LETTER GENERATOR",
+    "categories": ["Desktop Application", "Scripting & Automation"],
+    "importance": -1,
+    "technologies": ["Tkinter", "PyInstaller"],
+    "description": "An executable program to generate a cover letter according to user-defined project parameters;",
+    "privacy": "private",
+    "github": "",
+    "filename": "upwork-cover-letter-generator",
+    "gif": false
+  },
   {
     "title": "TASK TRACKER",
     "categories": ["Scripting & Automation"],

@@ -74,7 +74,7 @@ for category, details in categories.items():
             reference = ""
             print(f"[X] Invalid privacy for project: {title}")
 
-        articles += f"""                                    <article>
+        articles += f"""                                    <article id="{filename}">
 										<a class="image"><img src="../../images/{filename}.png" id="{filename}" alt="" /></a>
 										<h3 class="major">{title}</h3>
 										<p>{technologies}<br><br>{description}</p>
