@@ -320,7 +320,50 @@
   },
 
 
-
+  {
+    "title": "SUDOKU SOLVER",
+    "categories": ["Game Development", "Data Structures & Algorithm"],
+    "importance": -1,
+    "technologies": [],
+    "description": "A sudoku solver implemented with constraint propagation and backtracking algorithm;",
+    "privacy": "private",
+    "github": "",
+    "filename": "sudoku-solver",
+    "gif": false
+  },
+  {
+    "title": "WORDLE SOLVER",
+    "categories": ["Game Development"],
+    "importance": -1,
+    "technologies": [],
+    "description": "A Wordle game solver that filters the valid words from 200,000+ English words based on word guesses and evaluation thereof;",
+    "privacy": "private",
+    "github": "",
+    "filename": "wordle-solver",
+    "gif": false
+  },
+  {
+    "title": "HANGMAN",
+    "categories": ["Game Development"],
+    "importance": -1,
+    "technologies": [],
+    "description": "A classic hangman game with entries of 200,000+ English words and +/- 1000 movie titles;",
+    "privacy": "private",
+    "github": "",
+    "filename": "hangman",
+    "gif": false
+  },
+  {
+    "title": "TOWER OF HANOI SOLVER",
+    "categories": ["Game Development", "Data Structures & Algorithm"],
+    "importance": -1,
+    "technologies": [],
+    "description": "A Tower of Hanoi solver with recursion and iterative solution;",
+    "privacy": "private",
+    "github": "",
+    "filename": "tower-of-hanoi-solver",
+    "gif": false
+  },
   {
     "title": "PARKING SYSTEM",
     "categories": ["Scripting & Automation"],
