@@ -46,6 +46,17 @@
     "gif": true
   },
   {
+    "title": "GOLD FOR BLOOD",
+    "categories": ["Game Development"],
+    "importance": 2,
+    "technologies": ["PyGame"],
+    "description": "An infinite side-scroller game goal of which is to grab as many coins as you can while avoiding traps; Includes menu, credits, how to play, and game windows; Also features parallax scrolling and dynamic trap spawn location;",
+    "privacy": "private",
+    "github": "",
+    "filename": "gold-for-blood",
+    "gif": true
+  },
+  {
     "title": "TIC-TAC-TOE ARTIFICIAL INTELLIGENCE",
     "categories": ["Data Structures & Algorithm", "Game Development"],
     "importance": 2,
