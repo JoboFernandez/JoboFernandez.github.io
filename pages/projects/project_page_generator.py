@@ -71,7 +71,7 @@ for category, details in categories.items():
         elif privacy == "client":
             reference = f"""<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>"""
         else:
-            reference = ""
+            reference = "
             print(f"[X] Invalid privacy for project: {title}")
 
         articles += f"""                                    <article>
