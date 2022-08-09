@@ -51,8 +51,8 @@
     "importance": 2,
     "technologies": ["PyGame"],
     "description": "An infinite side-scroller game goal of which is to grab as many coins as you can while avoiding traps; Includes menu, credits, how to play, and game windows; Also features parallax scrolling and dynamic trap spawn location;",
-    "privacy": "private",
-    "github": "",
+    "privacy": "public",
+    "github": "https://github.com/JoboFernandez/Gold-for-Blood-public-version",
     "filename": "gold-for-blood",
     "gif": true
   },
