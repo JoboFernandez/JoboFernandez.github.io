@@ -46,7 +46,7 @@
     "gif": true
   },
   {
-    "title": "GOLD FOR BLOOD",
+    "title": "GOLD FOR BLOOD [Infinite Side-Scroller Game]",
     "categories": ["Game Development"],
     "importance": 2,
     "technologies": ["PyGame"],
@@ -90,14 +90,25 @@
     "gif": true
   },
   {
-    "title": "BLOG: BOOTSTRAP TEMPLATE",
+    "title": "DJANGO SOCIAL MEDIA PROJECT WITH BOOTSTRAP",
+    "categories": ["Web Development"],
+    "importance": 2,
+    "technologies": ["Django", "HTML", "Bootstrap", "sqlite3", "Crispy_Forms", "Channels", "smtp", "django-environ"],
+    "description": "A social media implementation with Django (backend) and Bootstrap (frontend); Includes four apps (accounts, user profiles, posts, and chats); Class-based views were utilized on some app views; Signals were also used; Default sqlite3 for database engine; InMemoryChannelLayer backend for channel layer backend; Django environ for sensitive data;",
+    "privacy": "public",
+    "github": "https://github.com/JoboFernandez/django-social-media",
+    "filename": "django-social-media-project-with-bootstrap",
+    "gif": true
+  },
+  {
+    "title": "DJANGO BLOG PROJECT WITH BOOTSTRAP TEMPLATE",
     "categories": ["Web Development"],
     "importance": 2,
     "technologies": ["Django", "HTML", "Bootstrap", "TinyMCE", "Crispy_Forms"],
     "description": "A blog implementation with Django (backend) and Bootstrap (frontend); Includes three apps (accounts, posts, and subscriptions); Class-based views were utilized on some app views; Signals were also used;",
     "privacy": "public",
     "github": "https://github.com/JoboFernandez/Blog-Bootstrap-Template",
-    "filename": "blog-bootstrap-template",
+    "filename": "django-blog-project-with-bootstrap",
     "gif": true
   },
   {
