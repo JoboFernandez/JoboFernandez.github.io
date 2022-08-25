@@ -93,7 +93,7 @@
     "title": "DJANGO SOCIAL MEDIA PROJECT WITH BOOTSTRAP",
     "categories": ["Web Development"],
     "importance": 2,
-    "technologies": ["Django", "HTML", "Bootstrap", "sqlite3", "Crispy_Forms", "Channels", "smtp", "django-environ"],
+    "technologies": ["Django", "HTML", "Bootstrap", "sqlite3", "Crispy_Forms", "Channels", "smtp", "django-environ", "Pillow"],
     "description": "A social media implementation with Django (backend) and Bootstrap (frontend); Includes four apps (accounts, user profiles, posts, and chats); Class-based views were utilized on some app views; Signals were also used; Default sqlite3 for database engine; InMemoryChannelLayer backend for channel layer backend; Django environ for sensitive data;",
     "privacy": "public",
     "github": "https://github.com/JoboFernandez/django-social-media",
