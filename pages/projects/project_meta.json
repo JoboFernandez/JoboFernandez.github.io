@@ -90,6 +90,17 @@
     "gif": true
   },
   {
+    "title": "DJANGO E-COMMERCE PROJECT WITH BOOTSTRAP, STATIC FILES, AND PAYPAL PAYMENT",
+    "categories": ["Web Development"],
+    "importance": 2,
+    "technologies": ["Django", "HTML", "Bootstrap", "Javascript", "sqlite3", "Crispy_Forms", "Pillow", "Paypal API"],
+    "description": "An e-commerce implementation with Django (backend) and Bootstrap, Static Files, and Javascript (frontend); Includes two apps (accounts, orders); Class-based views were used on occasion; Default sqlite3 for database engine; Includes Paypal payment integration;",
+    "privacy": "public",
+    "github": "https://github.com/JoboFernandez/django-ecommerce",
+    "filename": "django-ecommerce-project-with-bootstrap-static-files-and-paypal-payment",
+    "gif": true
+  },
+  {
     "title": "DJANGO SOCIAL MEDIA PROJECT WITH BOOTSTRAP",
     "categories": ["Web Development"],
     "importance": 2,
