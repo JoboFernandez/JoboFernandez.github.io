@@ -112,6 +112,17 @@
     "gif": true
   },
   {
+    "title": "DJANGO POLL PROJECT WITH BOOTSTRAP",
+    "categories": ["Web Development"],
+    "importance": 2,
+    "technologies": ["Django", "HTML", "Bootstrap", "sqlite3", "Crispy_Forms", "Pillow"],
+    "description": "A polling project implementation with Django (backend) and Bootstrap (frontend); Includes three apps (accounts, user profiles, and polls); Class-based views were utilized on some app views; Signals were also used; Default sqlite3 for database engine;",
+    "privacy": "public",
+    "github": "https://github.com/JoboFernandez/django-poll-project",
+    "filename": "django-poll-project-with-bootstrap",
+    "gif": true
+  },
+  {
     "title": "DJANGO BLOG PROJECT WITH BOOTSTRAP TEMPLATE",
     "categories": ["Web Development"],
     "importance": 2,
