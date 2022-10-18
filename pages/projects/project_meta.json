@@ -14,9 +14,9 @@
   },
   {
     "title": "LEAGUE OF LEGENDS BOT",
-    "categories": ["Scripting & Automation", "Game Development", "Desktop Application", "Data Structures & Algorithm"],
+    "categories": ["Scripting & Automation", "Desktop Application", "Data Structures & Algorithm"],
     "importance": 2,
-    "technologies": ["PyAutoGUI", "PyTesseract", "Pillow"],
+    "technologies": ["PyAutoGUI", "PyTesseract", "Pillow", "Tree & DFS"],
     "description": "A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;",
     "privacy": "private",
     "github": "",
@@ -27,7 +27,7 @@
     "title": "PATH FINDING VISUALIZER",
     "categories": ["Data Structures & Algorithm", "Desktop Application"],
     "importance": 2,
-    "technologies": ["PyGame"],
+    "technologies": ["PyGame", "A*, Bellman-Ford, BFS, DFS, Dijkstra's, Greedy Best First Search, IDS, UCS"],
     "description": "A 2D path-finding visualizer implemented in several algorithms (A*, Bellman-Ford, Breadth-First Search, Depth-First Search, Dijkstra's, Greedy Best First Search, Iterative Deepening Search, Uniform Cost Search);",
     "privacy": "public",
     "github": "https://github.com/JoboFernandez/PathFindingVisualizer/blob/master/main.py",
@@ -60,7 +60,7 @@
     "title": "TIC-TAC-TOE ARTIFICIAL INTELLIGENCE",
     "categories": ["Data Structures & Algorithm", "Game Development"],
     "importance": 2,
-    "technologies": ["PyGame"],
+    "technologies": ["PyGame", "Minimax Algorithm"],
     "description": "Classic Tic-Tac-Toe game featuring an AI on Minimax algorithm;",
     "privacy": "public",
     "github": "https://github.com/JoboFernandez/Tic-Tac-Toe/blob/master/main.py",
@@ -180,8 +180,8 @@
     "filename": "computer-surveillance",
     "gif": true
   },{
-    "title": "SCRAPER: ADACOUNTYITGIS",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: ADACOUNTYITGIS",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["Selenium", "Pandas", "PyInstaller"],
     "description": "An executable program that extracts the precinct numbers given the addresses;",
@@ -191,8 +191,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: AHADITH",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: AHADITH",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["BeautifulSoup", "Requests", "Regex"],
     "description": "Extracts book content from the website to a formatted text file;",
@@ -202,8 +202,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: BOLOGNACHILDRENSBOOKFAIR",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: BOLOGNACHILDRENSBOOKFAIR",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["Selenium", "BeautifulSoup", "Requests", "Pandas"],
     "description": "Extracts publishers, addresses, contacts, and age categories;",
@@ -213,8 +213,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: CONTACTCARS",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: CONTACTCARS",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["Selenium", "Pandas"],
     "description": "Extracts car names, models, and costs;",
@@ -224,8 +224,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: DORIDDLES",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: DORIDDLES",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["Selenium", "BeautifulSoup", "Requests", "Pandas"],
     "description": "Extracts riddles and answers;",
@@ -235,8 +235,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: MERRIAM-WEBSTER",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: MERRIAM-WEBSTER",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["BeautifulSoup", "Requests", "Pandas"],
     "description": "Extracts words, parts of speech, and URL;",
@@ -246,8 +246,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: SEBI",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: SEBI",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["Selenium", "Pandas"],
     "description": "Extracts dates and company names;",
@@ -257,8 +257,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: TALABAT",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: TALABAT",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["Selenium", "Pandas", "PyInstaller"],
     "description": "An executable program that extracts data into two (2) csv files; First file contains restaurant name, address, food type, and logo; Second file contains the food name, description, category, image, and price;",
@@ -268,8 +268,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: TERRASHOP",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: TERRASHOP",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["BeautifulSoup", "Requests", "Pandas"],
     "description": "Extracts product numbers and prices;",
@@ -279,8 +279,8 @@
     "gif": true
   },
   {
-    "title": "SCRAPER: YELLOWPAGES",
-    "categories": ["Scripting & Automation"],
+    "title": "WEB DATA EXTRACTION: YELLOWPAGES",
+    "categories": ["Web Automation"],
     "importance": 0,
     "technologies": ["BeautifulSoup", "Requests", "Pandas"],
     "description": "Extracts business names, contact details, and address;",
@@ -308,7 +308,7 @@
     "title": "KILLER SUDOKU SOLVER",
     "categories": ["Game Development", "Data Structures & Algorithm"],
     "importance": -1,
-    "technologies": [],
+    "technologies": ["Arc-consistency & Backtracking algorithm"],
     "description": "A program that solves a given Killer Sudoku board using Arc-consistency plus Backtracking Algorithm;",
     "privacy": "client",
     "github": "",
@@ -319,7 +319,7 @@
     "title": "WORD SEARCH PUZZLE SOLVER",
     "categories": ["Game Development", "Data Structures & Algorithm"],
     "importance": -1,
-    "technologies": [],
+    "technologies": ["Trie"],
     "description": "A program that searches for words from a given pool of letters in the form of a text file; This utilizes the use of Trie data structure in storing a given set of valid words;",
     "privacy": "client",
     "github": "",
@@ -368,7 +368,7 @@
     "title": "SUDOKU SOLVER",
     "categories": ["Game Development", "Data Structures & Algorithm"],
     "importance": -1,
-    "technologies": [],
+    "technologies": ["Constraint Propagation & Backtracking algorithm"],
     "description": "A sudoku solver implemented with constraint propagation and backtracking algorithm;",
     "privacy": "private",
     "github": "",
@@ -401,7 +401,7 @@
     "title": "TOWER OF HANOI SOLVER",
     "categories": ["Game Development", "Data Structures & Algorithm"],
     "importance": -1,
-    "technologies": [],
+    "technologies": ["Recursion & Iterative Solution"],
     "description": "A Tower of Hanoi solver with recursion and iterative solution;",
     "privacy": "private",
     "github": "",
@@ -470,7 +470,7 @@
     "title": "HTML LIST GENERATOR",
     "categories": ["Scripting & Automation", "Web Development", "Data Structures & Algorithm"],
     "importance": -2,
-    "technologies": ["HTML"],
+    "technologies": ["HTML", "DFS"],
     "description": "A program that generates a nested HTML list elements from a given list structure using DFS algorithm;",
     "privacy": "client",
     "github": "",
@@ -514,7 +514,7 @@
     "title": "CRYPTOCURRENCY WEIGHT BALANCER",
     "categories": ["Data Structures & Algorithm", "Scripting & Automation"],
     "importance": -2,
-    "technologies": [],
+    "technologies": ["Recursion"],
     "description": "A program that recursively balances the weights of a set of cryptocurrencies while not exceeding the weight-capping;",
     "privacy": "client",
     "github": "",
