@@ -23,6 +23,10 @@ categories = {
         "html": f"{LANGUAGE}_projects_scripting_and_automation.html",
         "projects": [],
     },
+    "Web Automation": {
+        "html": f"{LANGUAGE}_projects_web_automation.html",
+        "projects": [],
+    },
     "Web Development": {
         "html": f"{LANGUAGE}_projects_web_development.html",
         "projects": [],
