@@ -16,8 +16,8 @@
     "title": "LEAGUE OF LEGENDS BOT",
     "categories": ["Scripting & Automation", "Desktop Application", "Data Structures & Algorithm"],
     "importance": 2,
-    "technologies": ["PyAutoGUI", "PyTesseract", "Pillow", "Tree & DFS"],
-    "description": "A bot allowing champions to farm jungle camps utilizing their skills; This bot features about 20 champions thus far; Item purchase system is made flexible by implementing a Tree data structure and DFS algorithm;",
+    "technologies": ["PyQt5", "Qt Designer", "PyAutoGUI", "Pynput", "Thread and QThread", "PyTesseract", "Pillow", "Tree & DFS"],
+    "description": "Scripts that executes in either QtGUI or terminal/console; A game automation bot that uses primitive I/O functions with PyAutoGUI; Features 20-or-so champions each utilizing their unique skills in clearing jungle camps; Item purchase system implemented with a Tree data structure and DFS algorithm;",
     "privacy": "private",
     "github": "",
     "filename": "league-of-legends-bot",
@@ -158,6 +158,17 @@
 
 
 
+  {
+    "title": "GLOBAL NEWS SERVICES",
+    "categories": ["Scripting & Automation", "Desktop Application", "Web Automation"],
+    "importance": 2,
+    "technologies": ["Tkinter", "BeautifulSoup", "Urllib", "Regex", "Sqlite3"],
+    "description": "Scripts that executes in either QtGUI or terminal/console; A game automation bot that uses primitive I/O functions with PyAutoGUI; Features 20-or-so champions each utilizing their unique skills in clearing jungle camps; Item purchase system implemented with a Tree data structure and DFS algorithm;",
+    "privacy": "private",
+    "github": "",
+    "filename": "global-news-services",
+    "gif": false
+  },
   {
     "title": "PSEUDO YOUTUBE DOWNLOADER",
     "categories": ["Desktop Application", "Scripting & Automation"],
