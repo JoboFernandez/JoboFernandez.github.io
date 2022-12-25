@@ -170,6 +170,17 @@
     "gif": false
   },
   {
+    "title": "CONSTELLATION MAPPING",
+    "categories": ["Scripting & Automation"],
+    "importance": 2,
+    "technologies": ["XML"],
+    "description": "Script that reads from Yale Bright Star Catalog and maps into SVG using star parameters such as right ascension, declination, and magnitude;",
+    "privacy": "private",
+    "github": "",
+    "filename": "constellation-mapping",
+    "gif": false
+  },
+  {
     "title": "PSEUDO YOUTUBE DOWNLOADER",
     "categories": ["Desktop Application", "Scripting & Automation"],
     "importance": 1,

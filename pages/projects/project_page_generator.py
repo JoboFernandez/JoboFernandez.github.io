@@ -78,12 +78,12 @@ for category, details in categories.items():
             reference = ""
             print(f"[X] Invalid privacy for project: {title}")
 
-        articles += f"""                                    <article>
-										<a class="image"><img src="../../images/{filename}.png" id="{filename}" alt="" /></a>
-										<h3 class="major">{title}</h3>
-										<p>{technologies}<br><br>{description}</p>
-										{reference}
-									</article>\n"""
+        articles += f"""\t\t\t\t\t\t\t\t\t<article>\n"""
+        articles += f"""\t\t\t\t\t\t\t\t\t\t<a class="image"><img src="../../images/projects/{filename}.png" id="{filename}" alt="" /></a>\n"""
+        articles += f"""\t\t\t\t\t\t\t\t\t\t<h3 class="major">{title}</h3>\n"""
+        articles += f"""\t\t\t\t\t\t\t\t\t\t<p>{technologies}<br><br>{description}</p>\n"""
+        articles += f"""\t\t\t\t\t\t\t\t\t\t{reference}\n"""
+        articles += f"""\t\t\t\t\t\t\t\t\t</article>\n"""
 
         if not has_gif:
             continue
@@ -92,10 +92,10 @@ for category, details in categories.items():
 				$(function() {{
 						$("#{filename}").hover(
 							function() {{
-								$(this).attr("src", "../../images/{filename}.gif");
+								$(this).attr("src", "../../images/projects/{filename}.gif");
 							}},
 							function() {{
-								$(this).attr("src", "../../images/{filename}.png");
+								$(this).attr("src", "../../images/projects/{filename}.png");
 							}}
 						);
 					}});"""
