@@ -1,14 +1,21 @@
 from PIL import Image
 import os
 import math
+import shutil
 
 
 def adjust_aspect_ratio(input_directory, output_directory, aspect_width, aspect_height):
     aspect_ratio = aspect_width / aspect_height
     for file in os.listdir(input_directory):
         filename, extension = os.path.splitext(file)
-        image = Image.open(f"{input_directory}/{file}")
+        output_filename = f"{output_directory}/{file}"
 
+        if extension == ".gif":
+            shutil.copy(f"{input_directory}/{file}", output_filename)
+            print(f"[/] Successfully exported to {output_filename}")
+            continue
+
+        image = Image.open(f"{input_directory}/{file}")
         image_width, image_height = image.size
         image_ratio = image_width / image_height
         error = math.fabs(image_ratio - aspect_ratio) / aspect_ratio
@@ -40,7 +47,6 @@ def adjust_aspect_ratio(input_directory, output_directory, aspect_width, aspect_
 
         canvass = Image.new('RGB', (adjusted_width, adjusted_height), "#000000")
         canvass.paste(image, (x_adjustment, y_adjustment))
-        output_filename = f"{output_directory}/{file}"
         canvass.save(output_filename)
         print(f"[/] Successfully exported to {output_filename}")
 
