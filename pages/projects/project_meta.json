@@ -79,6 +79,17 @@
     "gif": true
   },
   {
+    "title": "SNAKE",
+    "categories": ["Desktop Application", "Game Development"],
+    "importance": 2,
+    "technologies": ["Pygame"],
+    "description": "An implementation of classic mobile phone game Snake;",
+    "privacy": "client",
+    "github": "",
+    "filename": "snake",
+    "gif": true
+  },
+  {
     "title": "GLOBAL NEWS SERVICES",
     "categories": ["Scripting & Automation", "Desktop Application", "Web Automation"],
     "importance": 2,
