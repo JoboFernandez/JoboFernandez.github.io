@@ -180,6 +180,17 @@
 
 
   {
+    "title": "BACTERIA COLONY ANIMATION",
+    "categories": ["Scripting & Automation"],
+    "importance": 2,
+    "technologies": ["Matplotlib", "Numpy"],
+    "description": "An animation of bacteria colony chemotaxis behavior in a space provided with nutrients; Bacteria dying and giving birth included;",
+    "privacy": "private",
+    "github": "",
+    "filename": "bacteria-colony-animation",
+    "gif": true
+  },
+  {
     "title": "CONSTELLATION MAPPING",
     "categories": ["Scripting & Automation"],
     "importance": 2,

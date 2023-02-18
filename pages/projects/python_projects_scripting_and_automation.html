@@ -77,6 +77,12 @@
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
 									</article>
 									<article>
+										<a class="image"><img src="../../images/projects/bacteria-colony-animation.png" id="bacteria-colony-animation" alt="" /></a>
+										<h3 class="major">BACTERIA COLONY ANIMATION</h3>
+										<p>Matplotlib | Numpy<br><br>An animation of bacteria colony chemotaxis behavior in a space provided with nutrients; Bacteria dying and giving birth included;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+									<article>
 										<a class="image"><img src="../../images/projects/constellation-mapping.png" id="constellation-mapping" alt="" /></a>
 										<h3 class="major">CONSTELLATION MAPPING</h3>
 										<p>XML<br><br>Script that reads from Yale Bright Star Catalog and maps into SVG using star parameters such as right ascension, declination, and magnitude;</p>
@@ -205,6 +211,16 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/projects/polygon-maker.png");
+							}
+						);
+					});
+				$(function() {
+						$("#bacteria-colony-animation").hover(
+							function() {
+								$(this).attr("src", "../../images/projects/bacteria-colony-animation.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/projects/bacteria-colony-animation.png");
 							}
 						);
 					});
