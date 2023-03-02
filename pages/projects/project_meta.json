@@ -79,6 +79,17 @@
     "gif": true
   },
   {
+    "title": "CONNECT FOUR",
+    "categories": ["Desktop Application", "Game Development"],
+    "importance": 2,
+    "technologies": ["Pygame"],
+    "description": "An implementation of classic family game Connect Four;",
+    "privacy": "private",
+    "github": "",
+    "filename": "connect_four",
+    "gif": true
+  },
+  {
     "title": "SNAKE",
     "categories": ["Desktop Application", "Game Development"],
     "importance": 2,
