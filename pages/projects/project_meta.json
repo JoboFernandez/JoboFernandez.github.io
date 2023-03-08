@@ -112,6 +112,17 @@
     "gif": false
   },
   {
+    "title": "PIXEL ART BUBBLE GENERATOR",
+    "categories": ["Scripting & Automation"],
+    "importance": 2,
+    "technologies": ["Pillow", "argparse", "os"],
+    "description": "Generates a pixel art PNG image of a speech bubble",
+    "privacy": "client",
+    "github": "",
+    "filename": "pixel-art-bubble-generator",
+    "gif": false
+  },
+  {
     "title": "POLYGON MAKER",
     "categories": ["Scripting & Automation"],
     "importance": 2,
