@@ -90,6 +90,17 @@
     "gif": true
   },
   {
+    "title": "EIGHT PUZZLE",
+    "categories": ["Data Structures & Algorithm", "Desktop Application", "Game Development"],
+    "importance": 2,
+    "technologies": ["Pygame", "Greedy Best-First Search, A*"],
+    "description": "An implementation of Eight Puzzle game; Extendable to larger puzzle sizes such as Fifteen Puzzle;",
+    "privacy": "private",
+    "github": "",
+    "filename": "eight-puzzle",
+    "gif": true
+  },
+  {
     "title": "SNAKE",
     "categories": ["Desktop Application", "Game Development"],
     "importance": 2,
