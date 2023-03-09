@@ -90,7 +90,7 @@
     "gif": true
   },
   {
-    "title": "EIGHT PUZZLE",
+    "title": "EIGHT PUZZLE WITH SOLVER",
     "categories": ["Data Structures & Algorithm", "Desktop Application", "Game Development"],
     "importance": 2,
     "technologies": ["Pygame", "Greedy Best-First Search, A*"],
