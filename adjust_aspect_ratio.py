@@ -54,6 +54,6 @@ def adjust_aspect_ratio(input_directory, output_directory, aspect_width, aspect_
 if __name__ == "__main__":
     directory = "images/projects_raw"
     output_directory = "images/projects"
-    aspect_ratio = (680, 460)
+    aspect_ratio = (450, 254)
     aspect_width, aspect_height = aspect_ratio
     adjust_aspect_ratio(input_directory=directory, output_directory=output_directory, aspect_width=aspect_width, aspect_height=aspect_height)
