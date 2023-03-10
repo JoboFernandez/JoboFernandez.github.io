@@ -14,10 +14,10 @@
   },
   {
     "title": "LEAGUE OF LEGENDS BOT",
-    "categories": ["Scripting & Automation", "Desktop Application", "Data Structures & Algorithm"],
+    "categories": ["Scripting & Automation", "Desktop Application"],
     "importance": 2,
-    "technologies": ["PyQt5", "Qt Designer", "PyAutoGUI", "Pynput", "Thread and QThread", "PyTesseract", "Pillow", "Tree & DFS"],
-    "description": "Scripts that executes in either QtGUI or terminal/console; A game automation bot that uses primitive I/O functions with PyAutoGUI; Features 20-or-so champions each utilizing their unique skills in clearing jungle camps; Item purchase system implemented with a Tree data structure and DFS algorithm;",
+    "technologies": ["PyQt5", "Qt Designer", "PyAutoGUI", "Pynput", "Thread and QThread", "PyTesseract", "Pillow"],
+    "description": "Script that executes in either QtGUI or terminal/console; A game bot that uses primitive I/O functions with PyAutoGUI; Features 30+ champions each utilizing their unique skills in clearing jungle camps;",
     "privacy": "private",
     "github": "",
     "filename": "league-of-legends-bot",
