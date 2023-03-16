@@ -67,7 +67,7 @@
 									<article>
 										<a class="image"><img src="../../images/projects/league-of-legends-bot.png" id="league-of-legends-bot" alt="" /></a>
 										<h3 class="major">LEAGUE OF LEGENDS BOT</h3>
-										<p>PyQt5 | Qt Designer | PyAutoGUI | Pynput | Thread and QThread | PyTesseract | Pillow | Tree & DFS<br><br>Scripts that executes in either QtGUI or terminal/console; A game automation bot that uses primitive I/O functions with PyAutoGUI; Features 20-or-so champions each utilizing their unique skills in clearing jungle camps; Item purchase system implemented with a Tree data structure and DFS algorithm;</p>
+										<p>PyQt5 | Qt Designer | PyAutoGUI | Pynput | Thread and QThread | PyTesseract | Pillow<br><br>Script that executes in either QtGUI or terminal/console; A game bot that uses primitive I/O functions with PyAutoGUI; Features 30+ champions each utilizing their unique skills in clearing jungle camps;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
@@ -86,6 +86,12 @@
 										<a class="image"><img src="../../images/projects/connect_four.png" id="connect_four" alt="" /></a>
 										<h3 class="major">CONNECT FOUR</h3>
 										<p>Pygame<br><br>An implementation of classic family game Connect Four;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+									<article>
+										<a class="image"><img src="../../images/projects/sudoku.png" id="sudoku" alt="" /></a>
+										<h3 class="major">SUDOKU WITH SOLVER</h3>
+										<p>Pygame | Constraint Propagation & Backtracking algorithm<br><br>A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
@@ -211,6 +217,16 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/projects/connect_four.png");
+							}
+						);
+					});
+				$(function() {
+						$("#sudoku").hover(
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.png");
 							}
 						);
 					});

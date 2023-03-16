@@ -59,12 +59,6 @@
 									<section class="features">
 
                                     									<article>
-										<a class="image"><img src="../../images/projects/league-of-legends-bot.png" id="league-of-legends-bot" alt="" /></a>
-										<h3 class="major">LEAGUE OF LEGENDS BOT</h3>
-										<p>PyQt5 | Qt Designer | PyAutoGUI | Pynput | Thread and QThread | PyTesseract | Pillow | Tree & DFS<br><br>Scripts that executes in either QtGUI or terminal/console; A game automation bot that uses primitive I/O functions with PyAutoGUI; Features 20-or-so champions each utilizing their unique skills in clearing jungle camps; Item purchase system implemented with a Tree data structure and DFS algorithm;</p>
-										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
-									</article>
-									<article>
 										<a class="image"><img src="../../images/projects/path-finding-visualizer.png" id="path-finding-visualizer" alt="" /></a>
 										<h3 class="major">PATH FINDING VISUALIZER</h3>
 										<p>PyGame | A*, Bellman-Ford, BFS, DFS, Dijkstra's, Greedy Best First Search, IDS, UCS<br><br>A 2D path-finding visualizer implemented in several algorithms (A*, Bellman-Ford, Breadth-First Search, Depth-First Search, Dijkstra's, Greedy Best First Search, Iterative Deepening Search, Uniform Cost Search);</p>
@@ -75,6 +69,12 @@
 										<h3 class="major">TIC-TAC-TOE ARTIFICIAL INTELLIGENCE</h3>
 										<p>PyGame | Minimax Algorithm<br><br>Classic Tic-Tac-Toe game featuring an AI on Minimax algorithm;</p>
 										<a href="https://github.com/JoboFernandez/Tic-Tac-Toe/blob/master/main.py" class="special">View Source Code</a>
+									</article>
+									<article>
+										<a class="image"><img src="../../images/projects/sudoku.png" id="sudoku" alt="" /></a>
+										<h3 class="major">SUDOKU WITH SOLVER</h3>
+										<p>Pygame | Constraint Propagation & Backtracking algorithm<br><br>A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
 										<a class="image"><img src="../../images/projects/eight-puzzle.png" id="eight-puzzle" alt="" /></a>
@@ -99,12 +99,6 @@
 										<h3 class="major">N-Queens Solver</h3>
 										<p>Z3 | Numpy | Itertools<br><br>A program that solves an N-Queens problem of any given board size; The problem is treated as a Constraint Satisfaction Problem (CSP) and is solved with Z3 Solver;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
-									</article>
-									<article>
-										<a class="image"><img src="../../images/projects/sudoku-solver.png" id="sudoku-solver" alt="" /></a>
-										<h3 class="major">SUDOKU SOLVER</h3>
-										<p>Constraint Propagation & Backtracking algorithm<br><br>A sudoku solver implemented with constraint propagation and backtracking algorithm;</p>
-										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
 										<a class="image"><img src="../../images/projects/tower-of-hanoi-solver.png" id="tower-of-hanoi-solver" alt="" /></a>
@@ -165,16 +159,6 @@
             <script>
             	
 				$(function() {
-						$("#league-of-legends-bot").hover(
-							function() {
-								$(this).attr("src", "../../images/projects/league-of-legends-bot.gif");
-							},
-							function() {
-								$(this).attr("src", "../../images/projects/league-of-legends-bot.png");
-							}
-						);
-					});
-				$(function() {
 						$("#path-finding-visualizer").hover(
 							function() {
 								$(this).attr("src", "../../images/projects/path-finding-visualizer.gif");
@@ -191,6 +175,16 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/projects/tic-tac-toe-ai-minimax.png");
+							}
+						);
+					});
+				$(function() {
+						$("#sudoku").hover(
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.png");
 							}
 						);
 					});

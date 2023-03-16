@@ -14,10 +14,10 @@
   },
   {
     "title": "LEAGUE OF LEGENDS BOT",
-    "categories": ["Scripting & Automation", "Desktop Application", "Data Structures & Algorithm"],
+    "categories": ["Scripting & Automation", "Desktop Application"],
     "importance": 2,
-    "technologies": ["PyQt5", "Qt Designer", "PyAutoGUI", "Pynput", "Thread and QThread", "PyTesseract", "Pillow", "Tree & DFS"],
-    "description": "Scripts that executes in either QtGUI or terminal/console; A game automation bot that uses primitive I/O functions with PyAutoGUI; Features 20-or-so champions each utilizing their unique skills in clearing jungle camps; Item purchase system implemented with a Tree data structure and DFS algorithm;",
+    "technologies": ["PyQt5", "Qt Designer", "PyAutoGUI", "Pynput", "Thread and QThread", "PyTesseract", "Pillow"],
+    "description": "Script that executes in either QtGUI or terminal/console; A game bot that uses primitive I/O functions with PyAutoGUI; Features 30+ champions each utilizing their unique skills in clearing jungle camps;",
     "privacy": "private",
     "github": "",
     "filename": "league-of-legends-bot",
@@ -87,6 +87,17 @@
     "privacy": "private",
     "github": "",
     "filename": "connect_four",
+    "gif": true
+  },
+  {
+    "title": "SUDOKU WITH SOLVER",
+    "categories": ["Game Development", "Desktop Application", "Data Structures & Algorithm"],
+    "importance": 2,
+    "technologies": ["Pygame", "Constraint Propagation & Backtracking algorithm"],
+    "description": "A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;",
+    "privacy": "private",
+    "github": "",
+    "filename": "sudoku",
     "gif": true
   },
   {
@@ -440,17 +451,6 @@
   },
 
 
-  {
-    "title": "SUDOKU SOLVER",
-    "categories": ["Game Development", "Data Structures & Algorithm"],
-    "importance": -1,
-    "technologies": ["Constraint Propagation & Backtracking algorithm"],
-    "description": "A sudoku solver implemented with constraint propagation and backtracking algorithm;",
-    "privacy": "private",
-    "github": "",
-    "filename": "sudoku-solver",
-    "gif": false
-  },
   {
     "title": "WORDLE SOLVER",
     "categories": ["Game Development"],
