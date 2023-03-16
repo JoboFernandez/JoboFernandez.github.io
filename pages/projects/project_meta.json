@@ -90,6 +90,17 @@
     "gif": true
   },
   {
+    "title": "SUDOKU WITH SOLVER",
+    "categories": ["Game Development", "Desktop Application", "Data Structures & Algorithm"],
+    "importance": 2,
+    "technologies": ["Pygame", "Constraint Propagation & Backtracking algorithm"],
+    "description": "A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;",
+    "privacy": "private",
+    "github": "",
+    "filename": "sudoku",
+    "gif": true
+  },
+  {
     "title": "EIGHT PUZZLE WITH SOLVER",
     "categories": ["Data Structures & Algorithm", "Desktop Application", "Game Development"],
     "importance": 2,
@@ -440,17 +451,6 @@
   },
 
 
-  {
-    "title": "SUDOKU SOLVER",
-    "categories": ["Game Development", "Data Structures & Algorithm"],
-    "importance": -1,
-    "technologies": ["Constraint Propagation & Backtracking algorithm"],
-    "description": "A sudoku solver implemented with constraint propagation and backtracking algorithm;",
-    "privacy": "private",
-    "github": "",
-    "filename": "sudoku-solver",
-    "gif": false
-  },
   {
     "title": "WORDLE SOLVER",
     "categories": ["Game Development"],

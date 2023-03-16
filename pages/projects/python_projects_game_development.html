@@ -89,6 +89,12 @@
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
+										<a class="image"><img src="../../images/projects/sudoku.png" id="sudoku" alt="" /></a>
+										<h3 class="major">SUDOKU WITH SOLVER</h3>
+										<p>Pygame | Constraint Propagation & Backtracking algorithm<br><br>A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+									<article>
 										<a class="image"><img src="../../images/projects/eight-puzzle.png" id="eight-puzzle" alt="" /></a>
 										<h3 class="major">EIGHT PUZZLE WITH SOLVER</h3>
 										<p>Pygame | Greedy Best-First Search, A*<br><br>An implementation of Eight Puzzle game; Extendable to larger puzzle sizes such as Fifteen Puzzle;</p>
@@ -117,12 +123,6 @@
 										<h3 class="major">WORD SEARCH PUZZLE SOLVER</h3>
 										<p>Trie<br><br>A program that searches for words from a given pool of letters in the form of a text file; This utilizes the use of Trie data structure in storing a given set of valid words;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
-									</article>
-									<article>
-										<a class="image"><img src="../../images/projects/sudoku-solver.png" id="sudoku-solver" alt="" /></a>
-										<h3 class="major">SUDOKU SOLVER</h3>
-										<p>Constraint Propagation & Backtracking algorithm<br><br>A sudoku solver implemented with constraint propagation and backtracking algorithm;</p>
-										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
 										<a class="image"><img src="../../images/projects/wordle-solver.png" id="wordle-solver" alt="" /></a>
@@ -223,6 +223,16 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/projects/connect_four.png");
+							}
+						);
+					});
+				$(function() {
+						$("#sudoku").hover(
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.png");
 							}
 						);
 					});

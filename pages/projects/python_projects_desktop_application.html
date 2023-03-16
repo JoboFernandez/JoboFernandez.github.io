@@ -89,6 +89,12 @@
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
+										<a class="image"><img src="../../images/projects/sudoku.png" id="sudoku" alt="" /></a>
+										<h3 class="major">SUDOKU WITH SOLVER</h3>
+										<p>Pygame | Constraint Propagation & Backtracking algorithm<br><br>A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+									<article>
 										<a class="image"><img src="../../images/projects/eight-puzzle.png" id="eight-puzzle" alt="" /></a>
 										<h3 class="major">EIGHT PUZZLE WITH SOLVER</h3>
 										<p>Pygame | Greedy Best-First Search, A*<br><br>An implementation of Eight Puzzle game; Extendable to larger puzzle sizes such as Fifteen Puzzle;</p>
@@ -211,6 +217,16 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/projects/connect_four.png");
+							}
+						);
+					});
+				$(function() {
+						$("#sudoku").hover(
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.png");
 							}
 						);
 					});

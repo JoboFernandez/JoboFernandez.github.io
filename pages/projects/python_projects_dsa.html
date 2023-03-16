@@ -71,6 +71,12 @@
 										<a href="https://github.com/JoboFernandez/Tic-Tac-Toe/blob/master/main.py" class="special">View Source Code</a>
 									</article>
 									<article>
+										<a class="image"><img src="../../images/projects/sudoku.png" id="sudoku" alt="" /></a>
+										<h3 class="major">SUDOKU WITH SOLVER</h3>
+										<p>Pygame | Constraint Propagation & Backtracking algorithm<br><br>A sudoku game implemented with a solver using constraint propagation and backtracking algorithm; Strategies used include hidden singles, hidden pairs, hidden triples, naked pairs, naked triples, pointing pairs and triples, and box line reduction;</p>
+										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
+									</article>
+									<article>
 										<a class="image"><img src="../../images/projects/eight-puzzle.png" id="eight-puzzle" alt="" /></a>
 										<h3 class="major">EIGHT PUZZLE WITH SOLVER</h3>
 										<p>Pygame | Greedy Best-First Search, A*<br><br>An implementation of Eight Puzzle game; Extendable to larger puzzle sizes such as Fifteen Puzzle;</p>
@@ -93,12 +99,6 @@
 										<h3 class="major">N-Queens Solver</h3>
 										<p>Z3 | Numpy | Itertools<br><br>A program that solves an N-Queens problem of any given board size; The problem is treated as a Constraint Satisfaction Problem (CSP) and is solved with Z3 Solver;</p>
 										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Confidential Source Code</a>
-									</article>
-									<article>
-										<a class="image"><img src="../../images/projects/sudoku-solver.png" id="sudoku-solver" alt="" /></a>
-										<h3 class="major">SUDOKU SOLVER</h3>
-										<p>Constraint Propagation & Backtracking algorithm<br><br>A sudoku solver implemented with constraint propagation and backtracking algorithm;</p>
-										<a href="#" class="special2" style="color: rgba(125, 125, 125, 1);">Private Source Code</a>
 									</article>
 									<article>
 										<a class="image"><img src="../../images/projects/tower-of-hanoi-solver.png" id="tower-of-hanoi-solver" alt="" /></a>
@@ -175,6 +175,16 @@
 							},
 							function() {
 								$(this).attr("src", "../../images/projects/tic-tac-toe-ai-minimax.png");
+							}
+						);
+					});
+				$(function() {
+						$("#sudoku").hover(
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.gif");
+							},
+							function() {
+								$(this).attr("src", "../../images/projects/sudoku.png");
 							}
 						);
 					});
