@@ -112,6 +112,17 @@
     "gif": true
   },
   {
+    "title": "TOWER OF HANOI WITH SOLVER",
+    "categories": ["Game Development", "Desktop Application", "Data Structures & Algorithm"],
+    "importance": 2,
+    "technologies": ["Pygame", "Recursion & Iterative Solution"],
+    "description": "A Tower of Hanoi puzzle game with solver implemented with recursion and iterative solution;",
+    "privacy": "private",
+    "github": "",
+    "filename": "tower-of-hanoi",
+    "gif": true
+  },
+  {
     "title": "SNAKE",
     "categories": ["Desktop Application", "Game Development"],
     "importance": 2,
@@ -471,17 +482,6 @@
     "privacy": "private",
     "github": "",
     "filename": "hangman",
-    "gif": false
-  },
-  {
-    "title": "TOWER OF HANOI SOLVER",
-    "categories": ["Game Development", "Data Structures & Algorithm"],
-    "importance": -1,
-    "technologies": ["Recursion & Iterative Solution"],
-    "description": "A Tower of Hanoi solver with recursion and iterative solution;",
-    "privacy": "private",
-    "github": "",
-    "filename": "tower-of-hanoi-solver",
     "gif": false
   },
   {
